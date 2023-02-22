@@ -1,0 +1,17 @@
+sample file to see the file sharing protocol
+
+
+Scenario: C no longer perceives any activity from C* – a halting
+failure? Distinguishing between a crash or omission/timing failure
+may be impossible:
+Asynchronous system: no assumptions about process execution
+speeds or message delivery times → cannot reliably detect crash
+failures.
+Synchronous system: process execution speeds and message delivery
+times are bounded → we can reliably detect omission and timing
+failures.
+In practice we have partially synchronous systems: most of the time,
+we can assume the system to be synchronous, yet there is no bound on
+the time that a system is asynchronous → can normally reliably
+detect crash failures.
+
